@@ -16,7 +16,7 @@ var geocodeAddress = (address, callback) => {
         longitude: body.results[0].geometry.location.lng
       });
     } else {
-      callback('Something went wrong, try again');
+      callback('Something went wrong in the geocode fetch, try again');
     }
   });
 };
